@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\User\Block\User\Edit\Tab\Main"
+                type="Serhii\UserAdmin\Block\Adminhtml\User\Edit\Tab\Main" />
+    <preference for="Magento\Backend\Block\System\Account\Edit\Form"
+                type="Serhii\UserAdmin\Block\Adminhtml\System\Account\Edit\Form" />
+    <preference for="Magento\User\Controller\Adminhtml\User\Save"
+                type="Serhii\UserAdmin\Controller\Adminhtml\User\Save" />
+    <preference for="Magento\Backend\Block\Page\Header"
+                type="Serhii\UserAdmin\Block\Adminhtml\Page\Header" />
+    <type name="Magento\Backend\Controller\Adminhtml\System\Account\Save">
+        <plugin name="Training_LoginProtect" type="Serhii\UserAdmin\Plugin\Controller\Adminhtml\User\Save"/>
+    </type>
+</config>

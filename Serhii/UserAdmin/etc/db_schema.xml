@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+    <table name="admin_user">
+        <column name="job_description" nullable="true" xsi:type="text" comment="Job Description"/>
+        <column name="profile_photo" nullable="true" xsi:type="varchar" length="255" comment="Profile Photo"/>
+        <column name="phone_number" nullable="true" xsi:type="varchar" length="255" comment="Phone Number"/>
+    </table>
+</schema>
